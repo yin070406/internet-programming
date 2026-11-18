@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Random Animal Slideshow - Ex2 </title>
+    <link rel="stylesheet" href="/Ex2/style.css">
+</head>
+<body>
+    <div class="btn">
+        <button type="button" id="showRandomBtn"> Show Random Animal </button>
+        <button type="button" id="restartBtn"> Restart Slideshow </button>
+    </div>
+    <div class="stage">
+        <div id="animalFrame" class="animal-frame" aria-live="polite">
+          <p id="placeholderMessage" class="placeholder-message"> No animal shown yet. </p>
+          <img id="animalImage" class="animal-image hidden" src="" alt="" />
+        </div>
+
+        <p id="animalNameLabel" class="animal-label"> &nbsp; </p>
+      </div>
+    <div class="round-status">
+        <p id="roundCounterText" class="counter-text"> Animals shown this round: 0/6 </p>
+        <div class="round-track" aria-hidden="true">
+            <div id="roundProgressFill" class="round-fill" style="width: 0%"></div>
+        </div>
+    </div>
+    <script src="/Ex2/script.js"></script>
+</body>
+</html>
